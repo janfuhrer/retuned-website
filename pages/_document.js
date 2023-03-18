@@ -2,14 +2,13 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 class CustomDocument extends Document {
   render() {
     return (
-      <Html lang="en">
+      <Html lang="de">
         <Head>
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           ></meta>
           <meta charSet="utf-8"></meta>
-          <meta property="twitter:card" content="summary_large_image"></meta>
           <style
             dangerouslySetInnerHTML={{
               __html:
