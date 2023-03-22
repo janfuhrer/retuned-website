@@ -9,31 +9,38 @@ const Impressum = (props) => {
     <>
       <div className="impressum-container">
         <Head>
-          <title>Impressum - retuned.ch</title>
-          <meta property="og:title" content="Impressum - retuned.ch" />
+          <title>Impressum - Retuned</title>
+          <meta property="og:title" content="Impressum - Retuned" />
         </Head>
-        <div className="impressum-top-container">
-          <nav data-role="Header" className="impressum-navbar">
+        <div className="top-fix-container">
+        <nav data-role="Header" className="menu-navbar">
             <Link href="/">
-              <a className="impressum-link">
-                <h1 className="impressum-logo link">retuned.ch</h1>
+              <a className="menu-link">
+                <img src="images/Retuned-02.svg" className="menu-logo" />
               </a>
             </Link>
+            <div className="menu-right-side">
+              <div className="menu-links-container">
+                <a href="/" className="menu-link link">
+                  <SolidButton button="Home"></SolidButton>
+                </a>
+              </div>
+            </div>
           </nav>
         </div>
-        <div id="about-section" className="impressum-about-us">
+        <div className="impressum-top-container">
+        </div>
+        <div className="impressum-text01">
           <h1 className="impressum-text05">Impressum</h1>
           <div className="impressum-container1">
             <span className="impressum-text06">
               <span className="impressum-text07">
-                E-Mail:
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
+                E-Mail: 
+
               </span>
-              <span className="impressum-text08">contact@retuned.ch</span>
+              <span className="impressum-text08">
+              <a href="mailto:contact@retuned.ch?subject=" className="link">contact@retuned.ch</a>
+              </span>
               <br className="impressum-text09"></br>
               <br className="impressum-text10"></br>
               <span className="impressum-text11">Haftungsausschluss</span>
@@ -86,21 +93,23 @@ const Impressum = (props) => {
             </span>
           </div>
         </div>
-        <div className="impressum-footer">
-          <div className="impressum-menu">
+        <div className="footer">
+          <div className="footer-menu">
             <Link href="/">
               <a className="impressum-link5">
-                <h1 className="impressum-logo2 link">retuned.ch</h1>
+                <img src="images/Retuned-02.svg" className="footer-logo" />
               </a>
             </Link>
-            <div className="impressum-links-container1">
-              <div className="impressum-container2">
+            <div className="footer-links-container">
+              <div className="footer-container">
                 <Link href="/impressum">
-                  <a className="impressum-link6 link">Impressum</a>
+                  <a className="impressum-link6 link">
+                    <SolidButton button="Impressum"></SolidButton>
+                  </a>
                 </Link>
               </div>
             </div>
-            <div className="impressum-follow-container1"></div>
+            <div className="footer-follow-container"></div>
           </div>
         </div>
       </div>
@@ -122,65 +131,10 @@ const Impressum = (props) => {
             flex-direction: column;
             background-color: #402141;
           }
-          .impressum-navbar {
-            width: 100%;
-            display: flex;
-            padding: var(--dl-space-space-doubleunit);
-            max-width: 1000px;
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-between;
-          }
           .impressum-link {
             display: contents;
           }
-          .impressum-logo {
-            color: var(--dl-color-gray-white);
-            text-decoration: none;
-          }
-          .impressum-nav {
-            flex: 0 0 auto;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-          }
-          .impressum-top {
-            flex: 0 0 auto;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            margin-bottom: var(--dl-space-space-doubleunit);
-            flex-direction: row;
-            justify-content: space-between;
-          }
-          .impressum-close-menu {
-            flex: 0 0 auto;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-          }
-          .impressum-icon03 {
-            width: 24px;
-            height: 24px;
-          }
-          .impressum-right-side {
-            width: 100%;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            justify-content: space-between;
-          }
-          .impressum-links-container {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 16px;
-            flex-direction: column;
-            justify-content: space-between;
-          }
           .impressum-text {
-            margin-bottom: 8px;
-          }
-          .impressum-text01 {
             margin-bottom: 8px;
           }
           .impressum-text02 {
@@ -188,12 +142,6 @@ const Impressum = (props) => {
           }
           .impressum-link1 {
             display: contents;
-          }
-          .impressum-follow-container {
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            justify-content: space-between;
           }
           .impressum-text04 {
             padding-bottom: var(--dl-space-space-halfunit);
@@ -226,7 +174,7 @@ const Impressum = (props) => {
             width: 24px;
             height: 24px;
           }
-          .impressum-about-us {
+          .impressum-text01 {
             width: 100%;
             display: flex;
             align-items: center;
@@ -238,6 +186,7 @@ const Impressum = (props) => {
             justify-content: flex-start;
           }
           .impressum-text05 {
+            font-family: Poppins-Medium;
             color: var(--dl-color-gray-500);
           }
           .impressum-container1 {
@@ -256,6 +205,7 @@ const Impressum = (props) => {
           }
           .impressum-text07 {
             font-weight: 700;
+            padding-right: 10px;
           }
           .impressum-text08 {
             font-style: normal;
@@ -276,90 +226,23 @@ const Impressum = (props) => {
           .impressum-text26 {
             font-weight: 700;
           }
-          .impressum-footer {
-            color: var(--dl-color-gray-white);
-            width: 100%;
-            display: flex;
-            padding: var(--dl-space-space-tripleunit);
-            z-index: 100;
-            box-shadow: 5px 5px 10px 0px #d4d4d4;
-            align-items: center;
-            border-color: var(--dl-color-gray-black);
-            border-width: 0px;
-            border-radius: var(--dl-radius-radius-radius4);
-            flex-direction: row;
-            justify-content: center;
-            background-color: #402141;
-          }
-          .impressum-menu {
-            width: 100%;
-            display: flex;
-            max-width: 1000px;
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-between;
-          }
           .impressum-link5 {
             display: contents;
-          }
-          .impressum-logo2 {
-            text-decoration: none;
-          }
-          .impressum-links-container1 {
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-between;
-          }
-          .impressum-container2 {
-            display: flex;
-            align-items: flex-start;
-            margin-left: 100px;
-            flex-direction: column;
           }
           .impressum-link6 {
             color: var(--dl-color-gray-white);
             margin-bottom: var(--dl-space-space-unit);
             text-decoration: none;
           }
-          .impressum-follow-container1 {
-            border: 2px dashed rgba(120, 120, 120, 0.4);
-            display: flex;
-            align-items: center;
-            margin-left: 50px;
-            flex-direction: column;
-            justify-content: space-between;
-          }
           @media (max-width: 767px) {
-            .impressum-about-us {
+            .impressum-text01 {
               padding-left: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
             }
-            .impressum-menu {
-              flex-direction: column;
-            }
-            .impressum-links-container1 {
-              margin-top: var(--dl-space-space-tripleunit);
-              margin-bottom: var(--dl-space-space-tripleunit);
-              justify-content: space-between;
-            }
           }
           @media (max-width: 479px) {
-            .impressum-links-container1 {
-              margin-top: var(--dl-space-space-doubleunit);
-              align-items: flex-start;
-              justify-content: flex-start;
-            }
-            .impressum-container2 {
-              height: 100%;
-              align-items: flex-start;
-              margin-left: 50px;
-            }
             .impressum-link6 {
               margin-bottom: var(--dl-space-space-halfunit);
-            }
-            .impressum-follow-container1 {
-              margin-left: 0px;
             }
           }
         `}
