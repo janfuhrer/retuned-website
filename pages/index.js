@@ -76,8 +76,8 @@ const Home = (props) => {
                 <img src="images/Retuned-02.svg" className="footer-logo" />
               </a>
             </Link>
-            <div className="footer-links-container">
-              <div className="footer-container">
+            <div className="menu-right-side">
+              <div className="footer-links-container">
                 <Link href="/impressum">
                   <a className="home-link5 link">
                     <SolidButton button="Impressum"></SolidButton>
@@ -85,7 +85,6 @@ const Home = (props) => {
                 </Link>
               </div>
             </div>
-            <div className="footer-follow-container"></div>
           </div>
         </div>
       </div>

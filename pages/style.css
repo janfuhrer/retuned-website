@@ -145,7 +145,6 @@ a.link:hover, h1.link:hover {
   width: 100%;
   display: flex;
   padding: var(--dl-space-space-doubleunit);
-  max-width: 1000px;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
@@ -162,13 +161,12 @@ a.link:hover, h1.link:hover {
   border-width: 0px;
   border-radius: var(--dl-radius-radius-radius4);
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   background-color: #402141;
 }
 .footer-menu {
   width: 100%;
   display: flex;
-  max-width: 1000px;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
@@ -184,14 +182,6 @@ a.link:hover, h1.link:hover {
   align-items: flex-start;
   margin-left: 100px;
   flex-direction: column;
-}
-.footer-follow-container {
-  border: 2px dashed rgba(120, 120, 120, 0.4);
-  display: flex;
-  align-items: center;
-  margin-left: 50px;
-  flex-direction: column;
-  justify-content: space-between;
 }
 .top-fix-container {
   position: fixed;
@@ -231,8 +221,5 @@ a.link:hover, h1.link:hover {
   .footer-container {
     height: 100%;
     align-items: flex-start;
-  }
-  .footer-follow-container {
-    margin-left: 0px;
   }
 }

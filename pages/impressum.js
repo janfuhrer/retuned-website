@@ -109,7 +109,6 @@ const Impressum = (props) => {
                 </Link>
               </div>
             </div>
-            <div className="footer-follow-container"></div>
           </div>
         </div>
       </div>
