@@ -39,26 +39,30 @@ const Home = (props) => {
         <div id="about-section" className="home-about-us">
           <h1 className="home-text3">About us</h1>
           <span className="home-text4">
-            soul / funk / blues / pop band aus burgdorf
           </span>
           <div className="home-container1">
             <span className="home-text5">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore et dolore magna aliquyam erat, sed diam
-              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-              dolor sit amet.
+            Wir sind die Band «Retuned» und sind eine siebenköpfige Funk-, Blues- und Pop-Band aus der Region Burgdorf BE. Unsere Gruppe besteht schon seit vielen Jahren und wurde einst von der Musikschule Burgdorf gegründet, über welche wir viele Konzerte spielen durften.
+            Über die Jahre gab es verschiedene Wechsel in Musikstil und Bandmitglieder, bis wir zur heutigen Band wurden. Seit 2017 bestehen wir aus den folgenden sieben Mitglieder:
+            <ul>
+              <li>Silia, vocals</li>
+              <li>Ramon, vocals</li>
+              <li>Sina, saxophone</li>
+              <li>Alex, guitar</li>
+              <li>Vivienne, keys</li>
+              <li>Jan, bass</li>
+              <li>Dominic, drums</li>
+            </ul>
+            Mit der Band «Retuned» haben wir uns einen Namen gemacht, indem wir bekannte Pop- und Funk-Songs in unserem eigenen Stil arrangieren und covern. Auch einige Blues- und Jazz-Stücke finden sich in unserem Repertoire. Dabei sollen sowohl der Gesang als auch die verschiedenen Instrumente im Fokus stehen, wodurch sich in der Mehrheit unserer Interpretationen Instrumentalteile mit abwechslungsreichen Solos befinden. 
+            Aufgetreten sind wir an verschiedenen Hochzeiten, sowohl bei Trauungen als auch beim späteren Fest, an Gewerbeausstellungen und Sportlerehrungen, wie auch an vielen kleineren Anlässen in Stadthauskellern oder anderen kleinen Lokalen.
+            Buchen darf man uns gerne für ganztägige Anlässe wie auch für Konzerte im kleineren oder grösseren Rahmen.
+            Wir freuen uns sehr über deine Anfrage.
             </span>
           </div>
         </div>
         <div id="contact" className="home-contact">
           <span className="home-text6">
-            Wir freuen uns auf weitere konzerte und Auftritte
+            Wir freuen uns auf weitere Konzerte und Auftritte
           </span>
           <h1 className="home-text7">Anfragen</h1>
           <a href="mailto:contact@retuned.ch?subject=" className="home-link3">
@@ -187,6 +191,11 @@ const Home = (props) => {
             color: var(--dl-color-gray-white);
             margin-bottom: var(--dl-space-space-unit);
             text-decoration: none;
+          }
+          ul {
+            margin-bottom: var(--dl-space-space-unit);
+            margin-top: var(--dl-space-space-unit);
+            margin-left: var(--dl-space-space-doubleunit);
           }
           @media (max-width: 767px) {
             .home-about-us {
