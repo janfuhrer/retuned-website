@@ -34,7 +34,7 @@ const Home = (props) => {
         </div>
         <div className="home-top-container">
         </div>
-        <a class="anchor" id="top"></a>
+        <a className="anchor" id="top"></a>
         <div id="about-section" className="home-about-us">
           <h1 className="home-text3">About us</h1>
           <span className="home-text4">
