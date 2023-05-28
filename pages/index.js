@@ -22,11 +22,9 @@ const Home = (props) => {
               </Link>
               <div className="menu-right-side">
                 <div className="menu-links-container">
-                  <a href="#about-section"            className="menu-link">
-                    <a href="#contact" className="menu-link">
-                  <SolidButton button="About us"></SolidButton>
+                  <a href="#top" className="menu-link">
+                    <SolidButton button="About us"></SolidButton>
                 </a>
-                  </a>
                 </div>
                 <a href="#contact" className="menu-link">
                   <SolidButton button="Contact"></SolidButton>
@@ -36,6 +34,7 @@ const Home = (props) => {
         </div>
         <div className="home-top-container">
         </div>
+        <a class="anchor" id="top"></a>
         <div id="about-section" className="home-about-us">
           <h1 className="home-text3">About us</h1>
           <span className="home-text4">
@@ -131,6 +130,12 @@ const Home = (props) => {
           .home-text3 {
             font-family: Poppins-Medium;
             color: var(--dl-color-gray-500);
+          }
+          #top {
+            display: block;
+            position: relative;
+            top: -110px;
+            visibility: hidden;
           }
           .home-text4 {
             color: var(--dl-color-gray-500);
